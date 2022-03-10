@@ -1,7 +1,7 @@
-import 'package:demo/controllers/meme_state.dart';
-import 'package:demo/interface/meme_interface.dart';
-import 'package:demo/services/meme_service.dart';
-import 'package:demo/services/meme_service_error_test.dart';
+import 'package:demo/memes/controllers/meme_state.dart';
+import 'package:demo/memes/interface/meme_interface.dart';
+import 'package:demo/memes/services/meme_service.dart';
+import 'package:demo/memes/services/meme_service_error_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final memesStateNotifierProvider =

@@ -1,5 +1,5 @@
-import 'package:demo/models/meme.dart';
-import 'package:demo/models/meme_exception.dart';
+import 'package:demo/memes/models/meme.dart';
+import 'package:demo/memes/models/meme_exception.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'meme_state.freezed.dart';

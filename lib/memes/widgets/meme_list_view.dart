@@ -1,5 +1,5 @@
-import 'package:demo/models/meme.dart';
-import 'package:demo/widgets/meme_tile.dart';
+import 'package:demo/memes/models/meme.dart';
+import 'package:demo/memes/widgets/meme_tile.dart';
 import 'package:flutter/material.dart';
 
 class MemeListViev extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:demo/controllers/meme_state_notifier.dart';
-import 'package:demo/models/meme_exception.dart';
+import 'package:demo/memes/controllers/meme_state_notifier.dart';
+import 'package:demo/memes/models/meme_exception.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

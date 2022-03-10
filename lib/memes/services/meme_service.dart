@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:demo/http/http_client.dart';
-import 'package:demo/interface/meme_interface.dart';
-import 'package:demo/models/meme_exception.dart';
-import 'package:demo/models/meme.dart';
+import 'package:demo/memes/http/http_client.dart';
+import 'package:demo/memes/interface/meme_interface.dart';
+import 'package:demo/memes/models/meme_exception.dart';
+import 'package:demo/memes/models/meme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final memeServiceProvider = Provider<MemeInterface>(

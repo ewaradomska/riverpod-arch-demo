@@ -1,7 +1,7 @@
-import 'package:demo/controllers/meme_state.dart';
-import 'package:demo/controllers/meme_state_notifier.dart';
-import 'package:demo/widgets/error.dart';
-import 'package:demo/widgets/meme_list_view.dart';
+import 'package:demo/memes/controllers/meme_state.dart';
+import 'package:demo/memes/controllers/meme_state_notifier.dart';
+import 'package:demo/memes/widgets/error.dart';
+import 'package:demo/memes/widgets/meme_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
