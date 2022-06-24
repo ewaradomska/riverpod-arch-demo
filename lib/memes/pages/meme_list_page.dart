@@ -1,7 +1,8 @@
 import 'package:demo/memes/controllers/meme_state.dart';
 import 'package:demo/memes/controllers/meme_state_notifier.dart';
-import 'package:demo/memes/widgets/error.dart';
+import 'package:demo/core/widgets/error.dart';
 import 'package:demo/memes/widgets/meme_list_view.dart';
+import 'package:demo/users/pages/users_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,6 +14,12 @@ class MemeListPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Memes demo app'),
+        actions: [
+          IconButton(
+              onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const UsersPage())),
+              icon: const Icon(Icons.account_circle_outlined)),
+        ],
       ),
       body: Consumer(
         builder: (context, ref, child) {

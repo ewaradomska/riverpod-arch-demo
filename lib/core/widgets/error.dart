@@ -1,10 +1,11 @@
+import 'package:demo/core/models/exception.dart';
 import 'package:demo/memes/controllers/meme_state_notifier.dart';
-import 'package:demo/memes/models/meme_exception.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ErrorInfo extends StatelessWidget {
-  final MemeException error;
+  final DemoException error;
   const ErrorInfo({Key? key, required this.error}) : super(key: key);
 
   @override

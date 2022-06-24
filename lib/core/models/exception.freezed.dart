@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'meme_exception.dart';
+part of 'exception.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,8 +15,8 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$MemeExceptionTearOff {
-  const _$MemeExceptionTearOff();
+class _$DemoExceptionTearOff {
+  const _$DemoExceptionTearOff();
 
   _ServerError serverError() {
     return const _ServerError();
@@ -36,10 +36,10 @@ class _$MemeExceptionTearOff {
 }
 
 /// @nodoc
-const $MemeException = _$MemeExceptionTearOff();
+const $DemoException = _$DemoExceptionTearOff();
 
 /// @nodoc
-mixin _$MemeException {
+mixin _$DemoException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() serverError,
@@ -96,20 +96,20 @@ mixin _$MemeException {
 }
 
 /// @nodoc
-abstract class $MemeExceptionCopyWith<$Res> {
-  factory $MemeExceptionCopyWith(
-          MemeException value, $Res Function(MemeException) then) =
-      _$MemeExceptionCopyWithImpl<$Res>;
+abstract class $DemoExceptionCopyWith<$Res> {
+  factory $DemoExceptionCopyWith(
+          DemoException value, $Res Function(DemoException) then) =
+      _$DemoExceptionCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MemeExceptionCopyWithImpl<$Res>
-    implements $MemeExceptionCopyWith<$Res> {
-  _$MemeExceptionCopyWithImpl(this._value, this._then);
+class _$DemoExceptionCopyWithImpl<$Res>
+    implements $DemoExceptionCopyWith<$Res> {
+  _$DemoExceptionCopyWithImpl(this._value, this._then);
 
-  final MemeException _value;
+  final DemoException _value;
   // ignore: unused_field
-  final $Res Function(MemeException) _then;
+  final $Res Function(DemoException) _then;
 }
 
 /// @nodoc
@@ -120,7 +120,7 @@ abstract class _$ServerErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ServerErrorCopyWithImpl<$Res> extends _$MemeExceptionCopyWithImpl<$Res>
+class __$ServerErrorCopyWithImpl<$Res> extends _$DemoExceptionCopyWithImpl<$Res>
     implements _$ServerErrorCopyWith<$Res> {
   __$ServerErrorCopyWithImpl(
       _ServerError _value, $Res Function(_ServerError) _then)
@@ -137,7 +137,7 @@ class _$_ServerError implements _ServerError {
 
   @override
   String toString() {
-    return 'MemeException.serverError()';
+    return 'DemoException.serverError()';
   }
 
   @override
@@ -227,7 +227,7 @@ class _$_ServerError implements _ServerError {
   }
 }
 
-abstract class _ServerError implements MemeException {
+abstract class _ServerError implements DemoException {
   const factory _ServerError() = _$_ServerError;
 }
 
@@ -240,7 +240,7 @@ abstract class _$UnauthorizedCopyWith<$Res> {
 
 /// @nodoc
 class __$UnauthorizedCopyWithImpl<$Res>
-    extends _$MemeExceptionCopyWithImpl<$Res>
+    extends _$DemoExceptionCopyWithImpl<$Res>
     implements _$UnauthorizedCopyWith<$Res> {
   __$UnauthorizedCopyWithImpl(
       _Unauthorized _value, $Res Function(_Unauthorized) _then)
@@ -257,7 +257,7 @@ class _$_Unauthorized implements _Unauthorized {
 
   @override
   String toString() {
-    return 'MemeException.unauthorized()';
+    return 'DemoException.unauthorized()';
   }
 
   @override
@@ -347,7 +347,7 @@ class _$_Unauthorized implements _Unauthorized {
   }
 }
 
-abstract class _Unauthorized implements MemeException {
+abstract class _Unauthorized implements DemoException {
   const factory _Unauthorized() = _$_Unauthorized;
 }
 
@@ -358,7 +358,7 @@ abstract class _$UnknownCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UnknownCopyWithImpl<$Res> extends _$MemeExceptionCopyWithImpl<$Res>
+class __$UnknownCopyWithImpl<$Res> extends _$DemoExceptionCopyWithImpl<$Res>
     implements _$UnknownCopyWith<$Res> {
   __$UnknownCopyWithImpl(_Unknown _value, $Res Function(_Unknown) _then)
       : super(_value, (v) => _then(v as _Unknown));
@@ -374,7 +374,7 @@ class _$_Unknown implements _Unknown {
 
   @override
   String toString() {
-    return 'MemeException.unknown()';
+    return 'DemoException.unknown()';
   }
 
   @override
@@ -464,7 +464,7 @@ class _$_Unknown implements _Unknown {
   }
 }
 
-abstract class _Unknown implements MemeException {
+abstract class _Unknown implements DemoException {
   const factory _Unknown() = _$_Unknown;
 }
 
@@ -478,7 +478,7 @@ abstract class _$InternetConnectionUnavailableCopyWith<$Res> {
 
 /// @nodoc
 class __$InternetConnectionUnavailableCopyWithImpl<$Res>
-    extends _$MemeExceptionCopyWithImpl<$Res>
+    extends _$DemoExceptionCopyWithImpl<$Res>
     implements _$InternetConnectionUnavailableCopyWith<$Res> {
   __$InternetConnectionUnavailableCopyWithImpl(
       _InternetConnectionUnavailable _value,
@@ -498,7 +498,7 @@ class _$_InternetConnectionUnavailable
 
   @override
   String toString() {
-    return 'MemeException.internetConnectionUnavailable()';
+    return 'DemoException.internetConnectionUnavailable()';
   }
 
   @override
@@ -589,7 +589,7 @@ class _$_InternetConnectionUnavailable
   }
 }
 
-abstract class _InternetConnectionUnavailable implements MemeException {
+abstract class _InternetConnectionUnavailable implements DemoException {
   const factory _InternetConnectionUnavailable() =
       _$_InternetConnectionUnavailable;
 }

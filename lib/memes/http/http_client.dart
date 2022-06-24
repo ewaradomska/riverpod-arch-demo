@@ -1,6 +1,5 @@
 import 'package:demo/memes/models/meme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:json_annotation/json_annotation.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
 

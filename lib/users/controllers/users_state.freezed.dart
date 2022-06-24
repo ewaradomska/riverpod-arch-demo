@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'meme_state.dart';
+part of 'users_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,8 +15,8 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$MemeStateTearOff {
-  const _$MemeStateTearOff();
+class _$UsersStateTearOff {
+  const _$UsersStateTearOff();
 
   _Initial initial() {
     return const _Initial();
@@ -26,9 +26,9 @@ class _$MemeStateTearOff {
     return const _Loading();
   }
 
-  _Memes memes(MemesContainer memesContainer) {
-    return _Memes(
-      memesContainer,
+  _Users users(List<User> users) {
+    return _Users(
+      users,
     );
   }
 
@@ -40,15 +40,15 @@ class _$MemeStateTearOff {
 }
 
 /// @nodoc
-const $MemeState = _$MemeStateTearOff();
+const $UsersState = _$UsersStateTearOff();
 
 /// @nodoc
-mixin _$MemeState {
+mixin _$UsersState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(MemesContainer memesContainer) memes,
+    required TResult Function(List<User> users) users,
     required TResult Function(DemoException error) error,
   }) =>
       throw _privateConstructorUsedError;
@@ -56,7 +56,7 @@ mixin _$MemeState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
   }) =>
       throw _privateConstructorUsedError;
@@ -64,7 +64,7 @@ mixin _$MemeState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
     required TResult orElse(),
   }) =>
@@ -73,7 +73,7 @@ mixin _$MemeState {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Memes value) memes,
+    required TResult Function(_Users value) users,
     required TResult Function(_Error value) error,
   }) =>
       throw _privateConstructorUsedError;
@@ -81,7 +81,7 @@ mixin _$MemeState {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
@@ -89,7 +89,7 @@ mixin _$MemeState {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
     required TResult orElse(),
   }) =>
@@ -97,18 +97,19 @@ mixin _$MemeState {
 }
 
 /// @nodoc
-abstract class $MemeStateCopyWith<$Res> {
-  factory $MemeStateCopyWith(MemeState value, $Res Function(MemeState) then) =
-      _$MemeStateCopyWithImpl<$Res>;
+abstract class $UsersStateCopyWith<$Res> {
+  factory $UsersStateCopyWith(
+          UsersState value, $Res Function(UsersState) then) =
+      _$UsersStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$MemeStateCopyWithImpl<$Res> implements $MemeStateCopyWith<$Res> {
-  _$MemeStateCopyWithImpl(this._value, this._then);
+class _$UsersStateCopyWithImpl<$Res> implements $UsersStateCopyWith<$Res> {
+  _$UsersStateCopyWithImpl(this._value, this._then);
 
-  final MemeState _value;
+  final UsersState _value;
   // ignore: unused_field
-  final $Res Function(MemeState) _then;
+  final $Res Function(UsersState) _then;
 }
 
 /// @nodoc
@@ -118,7 +119,7 @@ abstract class _$InitialCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$InitialCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
+class __$InitialCopyWithImpl<$Res> extends _$UsersStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
   __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
       : super(_value, (v) => _then(v as _Initial));
@@ -134,7 +135,7 @@ class _$_Initial implements _Initial {
 
   @override
   String toString() {
-    return 'MemeState.initial()';
+    return 'UsersState.initial()';
   }
 
   @override
@@ -151,7 +152,7 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(MemesContainer memesContainer) memes,
+    required TResult Function(List<User> users) users,
     required TResult Function(DemoException error) error,
   }) {
     return initial();
@@ -162,7 +163,7 @@ class _$_Initial implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
   }) {
     return initial?.call();
@@ -173,7 +174,7 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
     required TResult orElse(),
   }) {
@@ -188,7 +189,7 @@ class _$_Initial implements _Initial {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Memes value) memes,
+    required TResult Function(_Users value) users,
     required TResult Function(_Error value) error,
   }) {
     return initial(this);
@@ -199,7 +200,7 @@ class _$_Initial implements _Initial {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
   }) {
     return initial?.call(this);
@@ -210,7 +211,7 @@ class _$_Initial implements _Initial {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
@@ -221,7 +222,7 @@ class _$_Initial implements _Initial {
   }
 }
 
-abstract class _Initial implements MemeState {
+abstract class _Initial implements UsersState {
   const factory _Initial() = _$_Initial;
 }
 
@@ -232,7 +233,7 @@ abstract class _$LoadingCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$LoadingCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
+class __$LoadingCopyWithImpl<$Res> extends _$UsersStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
   __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
       : super(_value, (v) => _then(v as _Loading));
@@ -248,7 +249,7 @@ class _$_Loading implements _Loading {
 
   @override
   String toString() {
-    return 'MemeState.loading()';
+    return 'UsersState.loading()';
   }
 
   @override
@@ -265,7 +266,7 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(MemesContainer memesContainer) memes,
+    required TResult Function(List<User> users) users,
     required TResult Function(DemoException error) error,
   }) {
     return loading();
@@ -276,7 +277,7 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
   }) {
     return loading?.call();
@@ -287,7 +288,7 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
     required TResult orElse(),
   }) {
@@ -302,7 +303,7 @@ class _$_Loading implements _Loading {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Memes value) memes,
+    required TResult Function(_Users value) users,
     required TResult Function(_Error value) error,
   }) {
     return loading(this);
@@ -313,7 +314,7 @@ class _$_Loading implements _Loading {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
   }) {
     return loading?.call(this);
@@ -324,7 +325,7 @@ class _$_Loading implements _Loading {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
@@ -335,88 +336,78 @@ class _$_Loading implements _Loading {
   }
 }
 
-abstract class _Loading implements MemeState {
+abstract class _Loading implements UsersState {
   const factory _Loading() = _$_Loading;
 }
 
 /// @nodoc
-abstract class _$MemesCopyWith<$Res> {
-  factory _$MemesCopyWith(_Memes value, $Res Function(_Memes) then) =
-      __$MemesCopyWithImpl<$Res>;
-  $Res call({MemesContainer memesContainer});
-
-  $MemesContainerCopyWith<$Res> get memesContainer;
+abstract class _$UsersCopyWith<$Res> {
+  factory _$UsersCopyWith(_Users value, $Res Function(_Users) then) =
+      __$UsersCopyWithImpl<$Res>;
+  $Res call({List<User> users});
 }
 
 /// @nodoc
-class __$MemesCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
-    implements _$MemesCopyWith<$Res> {
-  __$MemesCopyWithImpl(_Memes _value, $Res Function(_Memes) _then)
-      : super(_value, (v) => _then(v as _Memes));
+class __$UsersCopyWithImpl<$Res> extends _$UsersStateCopyWithImpl<$Res>
+    implements _$UsersCopyWith<$Res> {
+  __$UsersCopyWithImpl(_Users _value, $Res Function(_Users) _then)
+      : super(_value, (v) => _then(v as _Users));
 
   @override
-  _Memes get _value => super._value as _Memes;
+  _Users get _value => super._value as _Users;
 
   @override
   $Res call({
-    Object? memesContainer = freezed,
+    Object? users = freezed,
   }) {
-    return _then(_Memes(
-      memesContainer == freezed
-          ? _value.memesContainer
-          : memesContainer // ignore: cast_nullable_to_non_nullable
-              as MemesContainer,
+    return _then(_Users(
+      users == freezed
+          ? _value.users
+          : users // ignore: cast_nullable_to_non_nullable
+              as List<User>,
     ));
-  }
-
-  @override
-  $MemesContainerCopyWith<$Res> get memesContainer {
-    return $MemesContainerCopyWith<$Res>(_value.memesContainer, (value) {
-      return _then(_value.copyWith(memesContainer: value));
-    });
   }
 }
 
 /// @nodoc
 
-class _$_Memes implements _Memes {
-  const _$_Memes(this.memesContainer);
+class _$_Users implements _Users {
+  const _$_Users(this.users);
 
   @override
-  final MemesContainer memesContainer;
+  final List<User> users;
 
   @override
   String toString() {
-    return 'MemeState.memes(memesContainer: $memesContainer)';
+    return 'UsersState.users(users: $users)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Memes &&
-            const DeepCollectionEquality()
-                .equals(other.memesContainer, memesContainer));
+            other is _Users &&
+            const DeepCollectionEquality().equals(other.users, users));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(memesContainer));
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override
-  _$MemesCopyWith<_Memes> get copyWith =>
-      __$MemesCopyWithImpl<_Memes>(this, _$identity);
+  _$UsersCopyWith<_Users> get copyWith =>
+      __$UsersCopyWithImpl<_Users>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(MemesContainer memesContainer) memes,
+    required TResult Function(List<User> users) users,
     required TResult Function(DemoException error) error,
   }) {
-    return memes(memesContainer);
+    return users(this.users);
   }
 
   @override
@@ -424,10 +415,10 @@ class _$_Memes implements _Memes {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
   }) {
-    return memes?.call(memesContainer);
+    return users?.call(this.users);
   }
 
   @override
@@ -435,12 +426,12 @@ class _$_Memes implements _Memes {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
     required TResult orElse(),
   }) {
-    if (memes != null) {
-      return memes(memesContainer);
+    if (users != null) {
+      return users(this.users);
     }
     return orElse();
   }
@@ -450,10 +441,10 @@ class _$_Memes implements _Memes {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Memes value) memes,
+    required TResult Function(_Users value) users,
     required TResult Function(_Error value) error,
   }) {
-    return memes(this);
+    return users(this);
   }
 
   @override
@@ -461,10 +452,10 @@ class _$_Memes implements _Memes {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
   }) {
-    return memes?.call(this);
+    return users?.call(this);
   }
 
   @override
@@ -472,23 +463,23 @@ class _$_Memes implements _Memes {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (memes != null) {
-      return memes(this);
+    if (users != null) {
+      return users(this);
     }
     return orElse();
   }
 }
 
-abstract class _Memes implements MemeState {
-  const factory _Memes(MemesContainer memesContainer) = _$_Memes;
+abstract class _Users implements UsersState {
+  const factory _Users(List<User> users) = _$_Users;
 
-  MemesContainer get memesContainer;
+  List<User> get users;
   @JsonKey(ignore: true)
-  _$MemesCopyWith<_Memes> get copyWith => throw _privateConstructorUsedError;
+  _$UsersCopyWith<_Users> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -501,7 +492,7 @@ abstract class _$ErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ErrorCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
+class __$ErrorCopyWithImpl<$Res> extends _$UsersStateCopyWithImpl<$Res>
     implements _$ErrorCopyWith<$Res> {
   __$ErrorCopyWithImpl(_Error _value, $Res Function(_Error) _then)
       : super(_value, (v) => _then(v as _Error));
@@ -539,7 +530,7 @@ class _$_Error implements _Error {
 
   @override
   String toString() {
-    return 'MemeState.error(error: $error)';
+    return 'UsersState.error(error: $error)';
   }
 
   @override
@@ -564,7 +555,7 @@ class _$_Error implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(MemesContainer memesContainer) memes,
+    required TResult Function(List<User> users) users,
     required TResult Function(DemoException error) error,
   }) {
     return error(this.error);
@@ -575,7 +566,7 @@ class _$_Error implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
   }) {
     return error?.call(this.error);
@@ -586,7 +577,7 @@ class _$_Error implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(MemesContainer memesContainer)? memes,
+    TResult Function(List<User> users)? users,
     TResult Function(DemoException error)? error,
     required TResult orElse(),
   }) {
@@ -601,7 +592,7 @@ class _$_Error implements _Error {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Memes value) memes,
+    required TResult Function(_Users value) users,
     required TResult Function(_Error value) error,
   }) {
     return error(this);
@@ -612,7 +603,7 @@ class _$_Error implements _Error {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
   }) {
     return error?.call(this);
@@ -623,7 +614,7 @@ class _$_Error implements _Error {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Memes value)? memes,
+    TResult Function(_Users value)? users,
     TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
@@ -634,7 +625,7 @@ class _$_Error implements _Error {
   }
 }
 
-abstract class _Error implements MemeState {
+abstract class _Error implements UsersState {
   const factory _Error(DemoException error) = _$_Error;
 
   DemoException get error;

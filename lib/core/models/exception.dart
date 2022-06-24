@@ -1,17 +1,17 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'meme_exception.freezed.dart';
+part 'exception.freezed.dart';
 
 @freezed
-class MemeException with _$MemeException {
-  const factory MemeException.serverError() = _ServerError;
-  const factory MemeException.unauthorized() = _Unauthorized;
-  const factory MemeException.unknown() = _Unknown;
-  const factory MemeException.internetConnectionUnavailable() =
+class DemoException with _$DemoException {
+  const factory DemoException.serverError() = _ServerError;
+  const factory DemoException.unauthorized() = _Unauthorized;
+  const factory DemoException.unknown() = _Unknown;
+  const factory DemoException.internetConnectionUnavailable() =
       _InternetConnectionUnavailable;
 }
 
-extension MemeExceptionX on MemeException {
+extension DemoExceptionX on DemoException {
   String get description {
     if (this is _Unauthorized) {
       return "Sorry, your session has expired. Please sign in again";

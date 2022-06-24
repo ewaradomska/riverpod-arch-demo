@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
+import 'package:demo/core/models/exception.dart';
 import 'package:demo/memes/http/http_client.dart';
 import 'package:demo/memes/interface/meme_interface.dart';
-import 'package:demo/memes/models/meme_exception.dart';
 import 'package:demo/memes/models/meme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,16 +13,16 @@ class MemeService implements MemeInterface {
   MemeService(this.client);
 
   @override
-  Future<Either<MemeException, MemesContainer>> getMemes() async {
+  Future<Either<DemoException, MemesContainer>> getMemes() async {
     try {
       final result = await client.getMemes();
       if (result.success) {
         return Right(result);
       } else {
-        return const Left(MemeException.serverError());
+        return const Left(DemoException.serverError());
       }
     } catch (e) {
-      return const Left(MemeException.unknown());
+      return const Left(DemoException.unknown());
     }
   }
 }
