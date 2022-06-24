@@ -18,7 +18,7 @@ class UsersPage extends StatelessWidget {
         builder: (context, ref, child) {
           final state = ref.watch(usersStateNotifierProvider);
           if (state == const UsersState.initial()) {
-            WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+            WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
               ref.read(usersStateNotifierProvider.notifier).getUsers();
             });
           }

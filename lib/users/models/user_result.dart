@@ -1,4 +1,3 @@
-import 'package:demo/core/models/exception.dart';
 import 'package:demo/users/models/user.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

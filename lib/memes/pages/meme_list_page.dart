@@ -25,7 +25,7 @@ class MemeListPage extends StatelessWidget {
         builder: (context, ref, child) {
           final state = ref.watch(memesStateNotifierProvider);
           if (state == const MemeState.initial()) {
-            WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+            WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
               ref.read(memesStateNotifierProvider.notifier).getMemes();
             });
           }
