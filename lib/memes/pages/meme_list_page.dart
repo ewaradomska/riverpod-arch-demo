@@ -38,7 +38,12 @@ class MemeListPage extends StatelessWidget {
             ),
             memes: (memes) => MemeListViev(memesList: memes.data.memes),
             error: (error) => Center(
-              child: ErrorInfo(error: error),
+              child: ErrorInfo(
+                error: error,
+                ontap: () {
+                  ref.read(memesStateNotifierProvider.notifier).tryAgain();
+                },
+              ),
             ),
           );
         },

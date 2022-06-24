@@ -6,7 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ErrorInfo extends StatelessWidget {
   final DemoException error;
-  const ErrorInfo({Key? key, required this.error}) : super(key: key);
+  final Function() ontap;
+  const ErrorInfo({Key? key, required this.error, required this.ontap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +31,7 @@ class ErrorInfo extends StatelessWidget {
             children: [
               Consumer(builder: (context, ref, child) {
                 return ElevatedButton(
-                    onPressed: () {
-                      ref.read(memesStateNotifierProvider.notifier).tryAgain();
-                    },
+                    onPressed: ontap,
                     child: const Text('Ok, I want to try again'));
               }),
             ],

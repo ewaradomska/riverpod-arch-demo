@@ -22,6 +22,7 @@ class UsersPage extends StatelessWidget {
               ref.read(usersStateNotifierProvider.notifier).getUsers();
             });
           }
+
           return state.when(
             initial: () => const Center(
               child: CircularProgressIndicator.adaptive(),
@@ -37,7 +38,12 @@ class UsersPage extends StatelessWidget {
                   age: users[index].age),
             ),
             error: (error) => Center(
-              child: ErrorInfo(error: error),
+              child: ErrorInfo(
+                error: error,
+                ontap: () {
+                  ref.read(usersStateNotifierProvider.notifier).refresh();
+                },
+              ),
             ),
           );
         },

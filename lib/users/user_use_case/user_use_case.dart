@@ -23,6 +23,7 @@ class UsersUseCase {
 
       if (users.isRight()) {
         final usersData = users.getRightOrThrow();
+
         yield UserResult(userData: usersData, isLoading: false);
       } else {
         final error = users.getLeftOrThrow();

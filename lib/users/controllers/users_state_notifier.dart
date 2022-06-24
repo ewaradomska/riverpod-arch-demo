@@ -25,8 +25,12 @@ class UsersStateNotifier extends StateNotifier<UsersState> {
         }
       }
       if (event.userData != null) {
-        state = UsersState.users(state.users);
+        state = UsersState.users(event.userData!);
       }
     });
+  }
+
+  void refresh() {
+    state = const UsersState.initial();
   }
 }
