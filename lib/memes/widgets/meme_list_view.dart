@@ -14,7 +14,9 @@ class MemeListViev extends StatelessWidget {
         itemBuilder: (context, index) {
           return Column(children: [
             MemeTile(
-                title: memesList[index].name, imageUrl: memesList[index].url),
+                id: memesList[index].id,
+                title: memesList[index].name,
+                imageUrl: memesList[index].url),
             const SizedBox(
               height: 16,
             )
