@@ -1,8 +1,9 @@
 import 'package:demo/memes/pages/meme_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_core/firebase_core.dart';
-//you need to add your firebase options
+
+//you need to add your firebase options and firebase if you want to use it in the project
+//import 'package:firebase_core/firebase_core.dart';
 //import 'firebase_options.dart';
 
 void main() async {
